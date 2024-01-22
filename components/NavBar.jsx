@@ -1,7 +1,6 @@
 'use client'
 
 import Link from "next/link"
-import Wave from "@/components/Wave"
 import MenuItem from "./MenuItem"
 import { FaHome, FaBloggerB } from "react-icons/fa";
 import { FaBoltLightning } from "react-icons/fa6";
@@ -21,8 +20,8 @@ function NavBar() {
   }
 
   return (
-    <div className={`w-full h-36 z-10 relative `}>
-        <Wave/>
+    <div className={`w-full h-28 z-10 relative `}>
+        
         <div className=" w-full h-full flex flex-row  justify-between p-4">
             <Link className="text-white text-4xl z-10 relative" href={'/'}><MenuItem name={"Home"} textstyle={getTextIcon(current,'/').text}><FaHome className={`w-6 h-6 ${getTextIcon(current,'/').icon}`}/></MenuItem></Link>
             <ul className="hidden lg:flex w-2/3  h-full absolute right-4   lg:flex-row lg:gap-8 lg:text-4xl  justify-end text-xl text-white">
