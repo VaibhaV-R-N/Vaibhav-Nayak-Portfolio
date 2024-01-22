@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Page() {
   return (
-    <div className='relative z-10 mt-4 w-full h-auto p-3 flex flex-col items-center justify-center gap-10'>
+    <div className='relative z-10 mt-4 w-full h-auto p-3 flex flex-col items-center justify-start gap-10'>
         <h3 className='text-yellow-400 text-2xl'>Privacy Policy for vaibhav-nayak-portfolio</h3>
         <p className='text-white text-md'>This Privacy Policy describes how Vaibhav Nayak (&quot;we,&quot; &quot;us,&quot; or &quot;our&quot;) collects, uses, and shares personal information when you visit and use the vaibhav-nayak-portfolio website (the &quot;Website&quot;).</p>
         <h3 className='text-yellow-400 text-2xl'>Information We Collect</h3>
