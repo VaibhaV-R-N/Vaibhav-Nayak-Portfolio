@@ -99,7 +99,7 @@ function Contact() {
         <h2 className="text-xl font-semibold text-yellow-400">Mail me a message 🌟</h2>
         <input disabled={!cookies.get("access")} className={`w-full h-14 text-center bg-transparent border-2 ${borderColor} outline-none rounded-md p-2`} placeholder="Subject" type="text" onChange={(e)=>{changeHandler(e,"subject")}} value={subject} />
         <textarea disabled={!cookies.get("access")} className={`text-white w-full h-1/3 text-center bg-transparent border-2 ${borderColor} outline-none rounded-md p-2`} placeholder="Message" onChange={(e)=>{changeHandler(e,"message")}} value={Message} ></textarea>
-        <motion.div whileTap={{scale:0.95, transition:{duration:0.5,type:"spring",stiffness:200}}} whileHover={{scale:1.05, transition:{duration:0.5,type:"spring",stiffness:200}}} className="cursor-pointer w-[70%] lg:w-[40%] p-1 h-16 text-center border-2 border-red-500 rounded-md flex items-center justify-evenly" onClick={sendMail}>
+        <motion.div whileTap={{scale:0.95, transition:{duration:0.5,type:"spring",stiffness:200}}} whileHover={{scale:1.05, transition:{duration:0.5,type:"spring",stiffness:200}}} className="cursor-pointer w-[80%] lg:w-[40%] p-1 h-16 text-center border-2 border-red-500 rounded-md flex items-center justify-evenly" onClick={sendMail}>
             <FaGoogle className="text-yellow-400 h-1/2 w-1/3" />
             <h3 className="text-white w-2/3">{buttonText}</h3>
         </motion.div>

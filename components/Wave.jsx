@@ -40,11 +40,11 @@ function Wave() {
     const animate = ()=>{
         context.clearRect(0,0,width,height);
         
-        waveHandler(wavePoint,"rgba(255,0,0,0.7)");
-        waveHandler(wavePointTwo,"rgba(255,255,0,0.7)");
+        waveHandler(wavePoint,"rgb(255,0,0)");
+        waveHandler(wavePointTwo,"rgb(255,255,0)");
 
-        waveHandler(reverseWave,"rgba(255,0,0,0.7)");
-        waveHandler(reverseTwo,"rgba(255,255,0,0.7)");
+        waveHandler(reverseWave,"rgb(255,0,0)");
+        waveHandler(reverseTwo,"rgb(255,255,0)");
         
         wavePoint.update("sin");
         wavePointTwo.update("cos");
