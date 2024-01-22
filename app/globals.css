@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.myBg{
+    clip-path: polygon(0 0, 91% 30%, 100% 100%, 0% 100%);
+}
+
+.myImg{
+    clip-path: circle(35% at 50% 51%);
+}
