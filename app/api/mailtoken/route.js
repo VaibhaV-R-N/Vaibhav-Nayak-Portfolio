@@ -14,5 +14,5 @@ export async function GET(req){
     store.set("access",access_token)
     store.set('refresh',refresh_token)
 
-    return Response.redirect('http://localhost:3000/contact')
+    return Response.redirect('https://vaibhav-nayak-portfolio.vercel.app/contact')
 }
