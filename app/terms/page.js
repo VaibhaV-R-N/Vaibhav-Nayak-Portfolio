@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Page() {
   return (
-    <div className='relative z-10 w-full h-auto p-3 mt-5 flex flex-col items-center justify-start gap-10'>
+    <div className='relative z-10 w-full h-auto p-3 mt-5 flex flex-col items-start justify-start gap-10'>
         <h3 className='text-yellow-400 text-2xl'>Terms of Service for vaibhav-nayak-portfolio</h3>
         <p className='text-white text-md'>These Terms of Service (&quot;Terms&quot;) govern your use of the vaibhav-nayak-portfolio website (the &quot;Website&quot;) operated by Vaibhav Nayak (&quot;we,&quot; &quot;us,&quot; or &quot;our&quot;).By accessing or using the Website, you agree to be bound by these Terms. If you do not agree with any part of these Terms, please do not use the Website.</p>
         <h3 className='text-yellow-400 text-2xl'>Use of the Website</h3>
@@ -25,7 +25,7 @@ export default function Page() {
         
         
         <h4 className='text-white text-xl'>Privacy Policy</h4>
-        <p className='text-white text-md'>Your use of the Website is also governed by our Privacy Policy, which can be found <a href='https://vaibhav-nayak-portfolio.vercel.app/privacy_policy'>here</a>. By using the Website, you consent to the practices described in the Privacy Policy.</p>
+        <p className='text-white text-md'>Your use of the Website is also governed by our Privacy Policy, which can be found <a className='text-blue-400' href='https://vaibhav-nayak-portfolio.vercel.app/privacy_policy'>here</a>. By using the Website, you consent to the practices described in the Privacy Policy.</p>
             
         <h3 className='text-yellow-400 text-2xl'>Changes to Terms</h3>
         <h4 className='text-white text-xl'>Modification</h4>
