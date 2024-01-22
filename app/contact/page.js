@@ -95,7 +95,7 @@ function Contact() {
 
   return (
     <motion.div initial={{scale:0}} animate={{scale:1}} transition={{duration:2,type:"spring",stiffness:300}} className="relative z-10 w-full h-screen lg:h-[120vh] text-white">
-      <div className="w-2/3 lg:w-1/3 h-1/2 lg:h-screen p-3  flex flex-col items-center justify-center gap-6 lg:gap-8 rounded-xl relative left-[50%] top-[50%] translate-x-[-50%] lg:translate-y-[-60%] translate-y-[-80%]"> 
+      <div className="w-full lg:w-1/3 h-1/2 lg:h-screen p-3  flex flex-col items-center justify-center gap-6 lg:gap-8 rounded-xl relative left-[50%] top-[50%] translate-x-[-50%] lg:translate-y-[-60%] translate-y-[-80%]"> 
         <h2 className="text-xl font-semibold text-yellow-400">Mail me a message 🌟</h2>
         <input disabled={!cookies.get("access")} className={`w-full h-14 text-center bg-transparent border-2 ${borderColor} outline-none rounded-md p-2`} placeholder="Subject" type="text" onChange={(e)=>{changeHandler(e,"subject")}} value={subject} />
         <textarea disabled={!cookies.get("access")} className={`text-white w-full h-1/3 text-center bg-transparent border-2 ${borderColor} outline-none rounded-md p-2`} placeholder="Message" onChange={(e)=>{changeHandler(e,"message")}} value={Message} ></textarea>
