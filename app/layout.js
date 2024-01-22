@@ -28,7 +28,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={ubuntu.className}>
+
         <Background/>
+     
         <CookiesProvider>
         <Providers>
           <Backdrop/>
@@ -37,6 +39,7 @@ export default function RootLayout({ children }) {
           {children}
         </Providers>
         </CookiesProvider>
+  
       </body>
     </html>
   )

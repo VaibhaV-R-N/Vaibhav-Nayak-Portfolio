@@ -8,9 +8,10 @@ import { IoIosArrowForward } from "react-icons/io";
 import { IoIosArrowBack } from "react-icons/io";
 import { useEffect, useState } from "react";
 import HeroCanvas from "./HeroCanvas";
-
+import { useRouter } from "next/navigation";
 function Mycard() {
   const [currentSlide,setCurrentSlide] = useState(1)
+  const router = useRouter()
   useEffect(()=>{
 
   },[currentSlide])
@@ -73,7 +74,7 @@ function Mycard() {
             <motion.div whileHover={{scale:1.1}} whileTap={{scale:0.90}} transition={{duration:1, type:"spring", stiffness:300}} className="w-[10%] lg:w-[15%] h-1/2" ><IoIosArrowForward onClick={nextClickHandler} className="w-full h-full text-yellow-400 "/></motion.div>
           
         </div>
-        <motion.div whileHover={{scale:1.1}} whileTap={{scale:0.90}} transition={{duration:1, type:"spring", stiffness:300}} className="bg-slate-950 relative z-20 w-2/3 lg:row-start-3 lg:w-1/4 lg:h-2/3 border-red-500 rounded-lg  border-4 flex flex-row items-center justify-center gap-3 p-8 cursor-pointer">
+        <motion.div onClick={()=>{router.push("https://docs.google.com/document/d/1UMWWTByMYLrXEEQpAhSFOGmTIehY4aWNypKK5Nz7qYw/edit?usp=sharing")}} whileHover={{scale:1.1}} whileTap={{scale:0.90}} transition={{duration:1, type:"spring", stiffness:300}} className="bg-slate-950 relative z-20 w-2/3 lg:row-start-3 lg:w-1/4 lg:h-2/3 border-red-500 rounded-lg  border-4 flex flex-row items-center justify-center gap-3 p-8 cursor-pointer">
             <h3 className="text-white text-xl">Resume</h3>
             <FaDownload className="text-yellow-400 w-8 h-8"/>
         </motion.div> 
